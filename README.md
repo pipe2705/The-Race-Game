@@ -7,7 +7,7 @@ USER STORIES
 The purpose of the game is to race the computer to the finish line using the space bar as the propeller to get you there. 
 
 <p align="center">
-<img src= "/Users/felipe/Projects/The-Race-Game/LF_Wireframe1.jpeg" width="350" title="First screen and First Steps" > 
+<img src= "https://github.com/pipe2705/The-Race-Game/blob/master/LF_Wireframe1.jpeg" width="350" title="First screen and First Steps" > 
 </p>
 
 How to staart the game? 
