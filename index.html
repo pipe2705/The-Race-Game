@@ -10,49 +10,62 @@
 
 
 <header> 
-    <div class="user-metrics ">
+    <div class="user-metrics">
         <div id="player1-points"></div>
-         <h4> 
+         <h4 class="player-name"> 
              <span id="player1-name">Player 1</span>
         </h4>
     </div>
 
     <div class="game-title">
-        
         <h1> The Race Game</h1>
         <p class= "game-subtitle"></p>
     </div>
 
     <div class = "cpu-metrics"> 
         <div id="cpu-points"></div>
-        <h4> 
+        <h4 class="player-name"> 
             <span id="cpu-name">CPU</span>
         </h4>
     </div>
-        
-
 </header>
 
 <body>
 
-        <div>
-            <img src="/Users/felipe/projects/The-Race-Game/Arrowdown.svg"> 
-            <p> Press Space Bar to Start Game!</p>
-            <p> Continue to Press Space Bar to Race!</p>
-            <img title="Image of space bar"> 
-        </div>
 
+<div class="horse-name-container">
+    <p class="horse-name">Horse Name goes here ans Image</p>
+    <img src="" alt="">
+</div>
 
-    <div> 
-        <h2>Score</h2>
-        <h2>Player 1</h2>
-        <h2> Player 2</h2>
-        <p1> points for player 1 Go here</p1>
-        <p1> Points for player 2 go here</p1>
-        <container> this is the left ||</container>
-        <container> This is the right || </container>
-
+<section class="scoring-bars">
+    <div class="Player1-scorebar">
+        <p class="current-score-player 1"> current score box</p>
     </div>
+
+    <div class="divider-column"> </div>
+    <div class="CPU-scorebar">
+            <p class="current-score-CPU"> current score box</p>
+    </div>
+
+</section>
+
+<section class="cta-buttons">
+    <div class="spacebar-container">
+         <div>
+             <img src="/Users/felipe/projects/The-Race-Game/Arrowdown.svg">
+        </div>
+        <button id="start-button">Press Space Bar to Start Game!</button>
+        <p class="button-instructions"> Continue to Press Space Bar to Race!</p>
+        <button class="Re-Start-Button"> Re-Start Game </button>
+    </div>
+</section>
+
+<div class="horse-name-container">
+        <p class="horse-name">Horse Name goes here and Image</p>
+        <img src="" alt="">
+    </div>
+    
 
 
 </body>
