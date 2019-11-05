@@ -30,7 +30,7 @@ let cpu = {
     points: 0 , 
     name: " ", 
     horseName : " "
-}
+} 
 
 
 // let gameLogic = () => { 
@@ -43,28 +43,44 @@ let cpu = {
 let totalPoints = document.querySelector("#p1points");
 let points = playerOne.points
 console.log(points)
-let addOne = function() {
-	document.body.onkeydown = function(bananas){
-		if(bananas.keyCode == 32){
-            playerOne.points = playerOne.points + Math.floor(Math.random() * 3)  
-            console.log(playerOne.points); 
+let addOne = () => {
+	document.body.onkeydown = function(param){
+		if(param.keyCode == 32){
+
+            playerOne.points = playerOne.points + Math.floor(Math.random() * 3)
+                 document.getElementById("p1points").innerHTML = playerOne.points  
+                 //console.log(playerOne.points + " p1 points"); 
 
             cpu.points = cpu.points + Math.floor(Math.random() * 3) 
+                 document.getElementById("cpu-points").innerHTML = cpu.points
+                // console.log (cpu.points + " cpu points" )
 
-            console.log (cpu.points + "cpu points" )
-
-            //get computer points
-            //player two value equals playertwo.points + random value of 0,1, or 2
-            }
-        
-            //alert("key worked")
-            // document.getElementById('p1points').innerHTML;
-            //  points = points++;
-            // console.log(points);  
-            // document.getElementById('p1points').innerHTML = points;   
-             //playerplayerOne.currentPoints = document.getElementById('p1points').innerHTML
+        if (playerOne.points >= 10 ) { 
+            alert("player 1 wins!");
+                }
+        if (cpu.points >= 10) {
+            alert("CPU wins!")
         }
-    }    
+
+        }
+        return playerOne.points 
+        //return cpu.points; 
+        }
+     }
+     
  
+// let gameEnd = ()=> { 
+   
+
+
+
+
+
  document.addEventListener("keypress", addOne())
- console.log(playerOne.points)
+//  document.addEventListener("keypress", console.log(playerOne.points))
+//  gameEnd()
+
+//  document.addEventListener("keypress", gameEnd()) 
+// console.log(playerOne.points)
+
+

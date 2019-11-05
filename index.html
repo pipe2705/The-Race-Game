@@ -11,7 +11,7 @@
 
 <header> 
     <div class="user-metrics">
-        <div id="player1-points">
+        <div id="player1-points-container">
             <h5><span id="p1points">0</span></h5>
         </div>
          <h4 class="player-name"> 
@@ -25,10 +25,12 @@
     </div>
 
     <div class = "cpu-metrics"> 
-        <div id="cpu-points"></div>
-        <h4 class="player-name"> 
-            <span id="cpu-name">CPU</span>
-        </h4>
+            <div id="cpu-points-container">
+                    <h5><span id="cpu-points">0</span></h5>
+                </div>
+            <h4 class="player-name"> 
+                     <span id="cpu">CPU</span>
+                   </h4>
     </div>
 </header>
 
@@ -42,7 +44,7 @@
 
 <section class="scoring-bars">
     <div class="Player1-scorebar">
-        <p class="current-score-player 1"> current score box</p>
+        <p class="current-score-player-1"> current score box</p>
     </div>
 
     <div class="divider-column"> </div>
@@ -73,7 +75,6 @@
 </body>
 
 <footer>
-    <button> Re-Start Game </button>
     
 </footer>
 </html>
