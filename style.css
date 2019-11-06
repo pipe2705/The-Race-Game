@@ -46,7 +46,6 @@ h4 {
 
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   position: absolute;
   top: 0;
@@ -64,9 +63,6 @@ header {
   border: white 10px;
 }
 
-.horse-name-container {
-  float: left;
-}
 .cta-buttons {
   height: 10em;
   display: flex;
@@ -145,6 +141,7 @@ p {
 .reStartButton {
   padding: 20px;
   position: relative;
+  margin-top: 90px;
 }
 
 button {
@@ -172,4 +169,18 @@ button:hover {
 
 button:active {
   background: rgb(3, 28, 61);
+}
+
+.horse-name-container1 {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+}
+.horse-name-container2 {
+  position: absolute;
+  top: 400px;
+  right: 100px;
+}
+.horse-name {
+  font-size: 60px;
 }
