@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>The Race Game</title>
-</head>
+  </head>
 
-
-<header> 
+  <header>
     <div class="user-metrics">
-        
-         <h4 class="player-name1"> 
-             <span class="player-name1">Player 1</span>
-        </h4>
-        <div id="player1-points-container">
-                <h5><span id="p1points">0</span></h5>
-            </div>
+      <h4 class="player-name1">
+        <span class="player-name1">Player 1</span>
+      </h4>
+      <div id="player1-points-container">
+        <h5><span id="p1points">0</span></h5>
+      </div>
     </div>
 
     <div class="game-title">
-        <h1> The Race Game</h1>
-        <p class= "game-subtitle"></p>
+      <h1>The Race Game 🏃🏽‍♂️</h1>
+      <p class="game-subtitle"></p>
     </div>
 
-    <div class = "cpu-metrics"> 
-            
-            <h4 class="player-name2"> 
-                     <span class="player-name2">CPU</span>
-                   </h4>
-            <div id="cpu-points-container">
-                    <h5><span id="cpu-points">0</span></h5>
-            </div>
+    <div class="cpu-metrics">
+      <h4 class="player-name2">
+        <span class="player-name2">CPU</span>
+      </h4>
+      <div id="cpu-points-container">
+        <h5><span id="cpu-points">0</span></h5>
+      </div>
     </div>
-</header>
+  </header>
 
-<body>
-
-
-<div class="horse-name-container">
-    <p class="horse-name">Horse Name goes here ans Image</p>
-    <img src="" alt="">
-</div>
-
-<section class="scoring-bars">
-    <div class="Player1-scorebar">
-        <p class="current-score-player-1">HHHH</p>
+  <body>
+    <div class="horse-name-container">
+      <p class="horse-name">Horse Name goes here ans Image</p>
+      <img src="" alt="" />
     </div>
 
-    <div class="divider-column"> </div>
-    <div class="CPU-scorebar">
-            <p class="current-score-CPU">HHHH</p>
+    <section class="scoring-bars">
+      <div class="Player1-scorebar">
+        <progress id="player1Bar" value="0" max="10"></progress>
+        <p class="current-score-player-1">Player 1</p>
+      </div>
+
+      <div class="divider-column"></div>
+      <div class="CPU-scorebar">
+        <progress id="cpuBar" value="0" max="10"></progress>
+        <p class="current-score-CPU">CPU</p>
+      </div>
+    </section>
+
+    <section class="cta-buttons">
+      <div>
+        <img
+          class="arrow"
+          src="/Users/felipe/projects/The-Race-Game/Arrowdown.svg"
+        />
+      </div>
+      <h4 class="start window">Press Space Bar to Start Game!</h4>
+      <p class="button-instructions">Continue to Press Space Bar to Race!</p>
+      <button type="button" onClick="refreshPage()" class="reStartButton">
+        Re-Start Game
+      </button>
+    </section>
+
+    <div class="horse-name-container">
+      <p class="horse-name">Horse Name goes here and Image</p>
+      <img src="" alt="" />
     </div>
-
-</section>
-
-<section class="cta-buttons">
-         <div>
-             <img class="arrow" src="/Users/felipe/projects/The-Race-Game/Arrowdown.svg">
-        </div>
-        <h4 class="start window">Press Space Bar to Start Game!</h4>
-        <p class="button-instructions"> Continue to Press Space Bar to Race!</p>
-        <button type="button" onClick="refreshPage()" class="reStartButton"> Re-Start Game </button>
-   </section>
-
-<div class="horse-name-container">
-        <p class="horse-name">Horse Name goes here and Image</p>
-        <img src="" alt="">
-    </div>
-    
 
     <script src="race.js"></script>
-</body>
+  </body>
 
-<footer>
-    
-</footer>
+  <footer></footer>
 </html>
