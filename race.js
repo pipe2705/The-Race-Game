@@ -33,27 +33,19 @@ let cpu = {
 } 
 
 
-// let gameLogic = () => { 
-
-//     // let spacebarEvent = 1 
-//     playerOne.currentPoints = playerOne.currentPoints + spacebarEvent 
-
-// }
-
-let totalPoints = document.querySelector("#p1points");
-let points = playerOne.points
-console.log(points)
 let addOne = () => {
 	document.body.onkeydown = function(param){
 		if(param.keyCode == 32){
 
             playerOne.points = playerOne.points + Math.floor(Math.random() * 3)
-                 document.getElementById("p1points").innerHTML = playerOne.points  
+                 document.getElementById("p1points").innerHTML = playerOne.points
+                 console.log(playerOne.points)
+
                  //console.log(playerOne.points + " p1 points"); 
 
             cpu.points = cpu.points + Math.floor(Math.random() * 3) 
                  document.getElementById("cpu-points").innerHTML = cpu.points
-                // console.log (cpu.points + " cpu points" )
+                console.log (cpu.points + " cpu points" )
 
         if (playerOne.points >= 10 ) { 
             alert("player 1 wins!");
@@ -61,24 +53,26 @@ let addOne = () => {
         if (cpu.points >= 10) {
             alert("CPU wins!")
         }
-
-        }
-        return playerOne.points 
-        //return cpu.points; 
+        return  
+        } 
+  
         }
      }
-     
- 
-// let gameEnd = ()=> { 
-   
+
+     let scoreBoard = () => {
+
+            document.getElementsByClassName("#current-score-player-1").innerHTML = playerOne.points;
+     }
 
 
+let refreshPage = () => {
+    window.location.reload();
+}
 
+ document.addEventListener("keypress", addOne)
+ scoreBoard()
+ console.log(playerOne) 
 
-
- document.addEventListener("keypress", addOne())
-//  document.addEventListener("keypress", console.log(playerOne.points))
-//  gameEnd()
 
 //  document.addEventListener("keypress", gameEnd()) 
 // console.log(playerOne.points)

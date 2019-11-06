@@ -11,12 +11,13 @@
 
 <header> 
     <div class="user-metrics">
-        <div id="player1-points-container">
-            <h5><span id="p1points">0</span></h5>
-        </div>
-         <h4 class="player-name"> 
-             <span id="player1-name">Player 1</span>
+        
+         <h4 class="player-name1"> 
+             <span class="player-name1">Player 1</span>
         </h4>
+        <div id="player1-points-container">
+                <h5><span id="p1points">0</span></h5>
+            </div>
     </div>
 
     <div class="game-title">
@@ -25,12 +26,13 @@
     </div>
 
     <div class = "cpu-metrics"> 
+            
+            <h4 class="player-name2"> 
+                     <span class="player-name2">CPU</span>
+                   </h4>
             <div id="cpu-points-container">
                     <h5><span id="cpu-points">0</span></h5>
-                </div>
-            <h4 class="player-name"> 
-                     <span id="cpu">CPU</span>
-                   </h4>
+            </div>
     </div>
 </header>
 
@@ -44,26 +46,24 @@
 
 <section class="scoring-bars">
     <div class="Player1-scorebar">
-        <p class="current-score-player-1"> current score box</p>
+        <p class="current-score-player-1">HHHH</p>
     </div>
 
     <div class="divider-column"> </div>
     <div class="CPU-scorebar">
-            <p class="current-score-CPU"> current score box</p>
+            <p class="current-score-CPU">HHHH</p>
     </div>
 
 </section>
 
 <section class="cta-buttons">
-    <div class="spacebar-container">
          <div>
-             <img src="/Users/felipe/projects/The-Race-Game/Arrowdown.svg">
+             <img class="arrow" src="/Users/felipe/projects/The-Race-Game/Arrowdown.svg">
         </div>
-        <button id="start-button">Press Space Bar to Start Game!</button>
+        <h4 class="start window">Press Space Bar to Start Game!</h4>
         <p class="button-instructions"> Continue to Press Space Bar to Race!</p>
-        <button class="Re-Start-Button"> Re-Start Game </button>
-    </div>
-</section>
+        <button type="button" onClick="refreshPage()" class="reStartButton"> Re-Start Game </button>
+   </section>
 
 <div class="horse-name-container">
         <p class="horse-name">Horse Name goes here and Image</p>
