@@ -80,8 +80,7 @@ header {
 progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
-  appearance: none;
-
+  transform: rotate(-90deg);
   width: 400px;
   height: 40px;
 }

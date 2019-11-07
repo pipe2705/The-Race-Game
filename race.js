@@ -1,29 +1,14 @@
-// the game has 2 players so I will need a variable for each player.
-// the game has 1 logic for the cpu
-//      thecpu logic will be for every time the player 1 presses the space bar the cpu
-//      will increase by 0,1 or 2 at random. if the cpu reaches the top first then the cpu wins.
-
-// The logic for player 1 will be. a point = 1 will be added everytime the player hits the space bar.
-// if the player 1 reaches (goal) before cpu player 1 wins.
-
-// will need to keep track of the current points for each player.
-// will need to celebrate or call an alert when player 1 or cpu wins.
-
-// the game will start when player 1 presses the space bar.
-
 // Main Logic for the game. ************************
 
 let playerOne = {
-  currentPoints: 0,
+  totalPoints: 0,
   points: 0,
-  name: ' ',
   horseName: ' '
 }
 
 let cpu = {
-  currentPoints: 0,
+  totalPoints: 0,
   points: 0,
-  name: ' ',
   horseName: ' '
 }
 
@@ -40,11 +25,27 @@ let addOne = () => {
       document.getElementById('cpu-points').innerHTML = cpu.points
       console.log(cpu.points + ' cpu points')
 
-      if (playerOne.points >= 11) {
+      if (playerOne.points >= 101) {
         alert('player 1 wins!')
       }
-      if (cpu.points >= 11) {
+      if (cpu.points >= 101) {
         alert('CPU wins!')
+      }
+      if ((playerOne.points && cpu.points) === 100) {
+        alert('Its a Tie!')
+      }
+
+      if (playerOne.points > 100 && playerOne.points > cpu.points) {
+        playerOne.totalPoints = playerOne.totalPoints + 1
+        console.log(playerOne.totalPoints)
+      }
+      if (cpu.points > 100 && cpu.points > playerOne.points) {
+        cpu.totalPoints = cpu.totalPoints + 1
+        console.log(cpu.totalPoints)
+
+        // button next round
+        // reset points and set everything back to 0 except for total points
+        //
       }
     }
   }
@@ -62,7 +63,7 @@ let refreshPage = () => {
 document.addEventListener('keypress', addOne)
 document.addEventListener('keypress', progressBar)
 progressBar()
-console.log(playerOne)
+console.log(cpu)
 
 //  document.addEventListener("keypress", gameEnd())
 // console.log(playerOne.points)
