@@ -16,6 +16,9 @@
       <div id="player1-points-container">
         <h5><span id="p1points">0</span></h5>
       </div>
+      <div id="rounds-container">
+        <h5>Rounds Won - <span id="roundsWonp1"></span></h5>
+      </div>
     </div>
 
     <div class="game-title">
@@ -30,13 +33,15 @@
       <div id="cpu-points-container">
         <h5><span id="cpu-points">0</span></h5>
       </div>
+      <div id="rounds-container">
+        <h5><span id="roundsWoncpu"></span>- Rounds Won</h5>
+      </div>
     </div>
   </header>
 
   <body>
     <div class="horse-name-container1">
-      <p class="horse-name">🐴</p>
-      <img src="" alt="" />
+      <p class="horse-name">🇨🇴</p>
     </div>
 
     <section class="scoring-bars">
@@ -61,14 +66,16 @@
       </div>
       <h4 class="start window">Press Space Bar to Start Game!</h4>
       <p class="button-instructions">Continue to Press Space Bar to Race!</p>
+      <button type="button" class="round2" onClick="nextRound()">
+        Next Round
+      </button>
       <button type="button" onClick="refreshPage()" class="reStartButton">
         Re-Start Game
       </button>
     </section>
 
     <div class="horse-name-container2">
-      <p class="horse-name">🦄</p>
-      <img src="" alt="" />
+      <p class="horse-name">🇩🇪</p>
     </div>
 
     <script src="race.js"></script>
