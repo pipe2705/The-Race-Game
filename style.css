@@ -6,14 +6,14 @@
   padding: 0;
   box-sizing: border-box;
   text-transform: uppercase;
-  transition: all 3s ease;
+  transition: all 2s ease;
 
   --color-background-app: radial-gradient(
     150.44% 150.44% at 50% 36.28%,
     rgba(116, 177, 36, 0.87) 0%,
-    rgb(90, 121, 7) 100%
+    rgb(34, 45, 5) 100%
   );
-  --color-text-primary: #33363a;
+  --color-text-primary: #1f2935;
   --color-text-primary--on-dark: #ffffff;
   --color-text-secondary: rgba(51, 54, 58, 0.6);
   --color-button-background: rgb(22, 134, 185);
@@ -83,11 +83,11 @@ progress[value] {
   -webkit-appearance: none;
   transform: rotate(-90deg);
   width: 400px;
-  height: 40px;
+  height: 150px;
 }
 
 progress[value]::-webkit-progress-bar {
-  background-color: #d1e0e0;
+  background-color: #a8acac;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
@@ -101,7 +101,7 @@ progress[value]::-webkit-progress-value {
       transparent 66%
     ),
     -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
-    -webkit-linear-gradient(left, #09c, #f44);
+    -webkit-linear-gradient(left, rgb(3, 89, 118), rgb(154, 33, 33));
 
   border-radius: 10px;
   background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -116,7 +116,7 @@ progress[value]::-webkit-progress-value {
       transparent 66%
     ),
     -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
-    -webkit-linear-gradient(left, #09c, #f44);
+    -webkit-linear-gradient(left, rgb(3, 89, 118), rgb(154, 33, 33));
 
   border-radius: 10px;
   background-size: 40px 25px, 100% 100%, 100% 100%;
