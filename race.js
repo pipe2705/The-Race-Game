@@ -2,14 +2,12 @@
 
 let playerOne = {
   totalPoints: 0,
-  points: 0,
-  horseName: " "
+  points: 0
 };
 
 let cpu = {
   totalPoints: 0,
-  points: 0,
-  horseName: " "
+  points: 0
 };
 
 let addOne = () => {
@@ -25,10 +23,10 @@ let addOne = () => {
       console.log(cpu.points + " cpu points");
 
       if (playerOne.points >= 50) {
-        alert("I can code an alert yeaaaahhhh! Colombia Wins! ");
+        alert("I can code an alert yeaaaahhhh! Player 1 Wins!! ");
       }
       if (cpu.points >= 50) {
-        alert("Germany wins! :((((");
+        alert("MONK wins!! ");
       }
       if (playerOne.points >= 50 && cpu.points >= 50) {
         alert("Its a Tie");
@@ -41,10 +39,10 @@ let addOne = () => {
 
 let gameWinnerCheck = () => {
   if (playerOne.totalPoints >= 2) {
-    alert("Player 1 Wins Game End of Rounds");
+    alert("Player 1 Wins Game.. End of Rounds");
   }
   if (cpu.totalPoints >= 2) {
-    alert("CPU Wins the Game End of Rounds");
+    alert("MONK Wins the Game..End of Rounds");
   }
 };
 
@@ -73,7 +71,7 @@ nextRoundButton.addEventListener(
 );
 
 let progressBar = () => {
-  document.getElementById("start-window").textContent = "HDJSGADHJG";
+  document.getElementById("start-window").textContent = "GO GO GEAUXX!!!";
   document.getElementById("player1Bar").value = playerOne.points;
   document.getElementById("cpuBar").value = cpu.points;
 };

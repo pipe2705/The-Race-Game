@@ -8,6 +8,17 @@
   text-transform: uppercase;
   transition: all 2s ease;
 
+  /*
+FYI learned about custom classes externally using --  
+Other sources I referenced for ideas and cool css effects: 
+
+https://www.w3.org/Style/Examples/007/center.en.html
+
+Progress bar sources: 
+https://css-tricks.com/html5-progress-element/
+
+*/
+
   --color-background-app: radial-gradient(
     150.44% 150.44% at 50% 36.28%,
     rgba(116, 177, 36, 0.87) 0%,
@@ -55,9 +66,11 @@ header {
 
 #p1points {
   font-size: 60px;
+  font-weight: 400;
 }
 #cpu-points {
   font-size: 60px;
+  font-weight: 400;
 }
 .user-metrics {
   align-items: center;
@@ -146,6 +159,7 @@ p {
   padding: 20px;
   position: relative;
   margin-top: 200px;
+  color: rgba(230, 71, 14, 0.762);
 }
 
 button {
@@ -196,4 +210,5 @@ h5 {
 .round2 {
   margin-top: 75px;
   color: var(--color-text-primary--on-dark);
+  padding: 40px;
 }
