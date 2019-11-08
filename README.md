@@ -2,6 +2,8 @@ The Race Game
 Felipe Gonzalez
 
 
+Link: https://pipe2705.github.io/The-Race-Game/
+
 USER STORIES
 
 The purpose of the game is to race the computer to the finish line using the space bar as the propeller to get you there. 
