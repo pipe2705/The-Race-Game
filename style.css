@@ -212,3 +212,7 @@ h5 {
   color: var(--color-text-primary--on-dark);
   padding: 40px;
 }
+
+.arrow {
+  font-size: 120px;
+}
